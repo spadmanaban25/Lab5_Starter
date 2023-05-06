@@ -1,3 +1,3 @@
 # Lab 5 - Starter
-Name: Steve Padmanaban
+Name: Steve Padmanaban <br>
 Partner: Cody Rupp
