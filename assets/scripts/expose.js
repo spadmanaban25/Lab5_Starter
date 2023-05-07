@@ -60,8 +60,7 @@ function init() {
     }
   
   });
-
-
+  
   soundButton.addEventListener('click', function (e) {
     sound.play();
     if (hornImg.alt === "Party Horn") {
