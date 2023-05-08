@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', init);
 const synth = window.speechSynthesis;
 
 function init() {
-  // on page load, initialize all available speech voices
   var select = document.getElementById('voice-select');
   window.addEventListener('load', function() {
     let voices = synth.getVoices();
