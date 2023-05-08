@@ -33,7 +33,7 @@ function init() {
       hornImg.src = "assets/images/car-horn.svg";
       hornSound.src = "assets/audio/car-horn.mp3";
 
-    } else if (selectedHorn.value == 'Party Horn') {
+    } else if (selectedHorn.value == 'party-horn') {
       hornImg.alt = "Party Horn";
       hornImg.src = "assets/images/party-horn.svg";
       hornSound.src = "assets/audio/party-horn.mp3";
