@@ -18,7 +18,7 @@ function init() {
   const selectedHorn = document.getElementById('horn-select');
   const hornImg = document.querySelector('img');
   const soundButton = document.querySelector('button');
-  const soundVolume = document.getElementById('volume-controls');
+  const soundVolume = document.getElementById('volume');
   var sound;
 
   selectedHorn.addEventListener('change', function (e) {
@@ -38,24 +38,23 @@ function init() {
   });
 
   soundVolume.addEventListener('change', function () {
-    let soundLevel = soundVolume.children[0].value;
-    let audioImg = soundVolume.children[1];
+    let audioImg = document.querySelectorAll('img')[1];
     let audio = document.querySelector('audio');
 
-    if (soundLevel == 0) {
+    if (soundVolume.value == 0) {
       audioImg.alt = "Volume Level 0";
       audioImg.src = "assets/icons/volume-level-0.svg";
-    } else if (soundLevel >= 1 && soundLevel < 32) {
+    } else if (soundVolume.value >= 1 && soundVolume.value < 32) {
       audioImg.alt = "Volume Level 1";
       audioImg.src = "assets/icons/volume-level-1.svg";
-    } else if (soundLevel >= 33 && soundLevel < 67) {
+    } else if (soundVolume.value >= 33 && soundVolume.value < 67) {
       audioImg.alt = "Volume Level 2";
       audioImg.src = "assets/icons/volume-level-2.svg";
     } else {
       audioImg.alt = "Volume Level 3";
       audioImg.src = "assets/icons/volume-level-3.svg";
     }
-    audio.volume = soundLevel / 100;
+    audio.volume = soundVolume.value / 100;
   
   });
   
