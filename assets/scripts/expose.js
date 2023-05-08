@@ -44,20 +44,17 @@ function init() {
     if (soundLevel == 0) {
       audioImg.alt = "Volume Level 0";
       audioImg.src = "assets/icons/volume-level-0.svg";
-      sound.volume = 0;
     } else if (soundLevel >= 1 && soundLevel < 32) {
       audioImg.alt = "Volume Level 1";
       audioImg.src = "assets/icons/volume-level-1.svg";
-      sound.volume = soundLevel / 100;
     } else if (soundLevel >= 33 && soundLevel < 67) {
       audioImg.alt = "Volume Level 2";
       audioImg.src = "assets/icons/volume-level-2.svg";
-      sound.volume = soundLevel / 100;
     } else {
       audioImg.alt = "Volume Level 3";
       audioImg.src = "assets/icons/volume-level-3.svg";
-      sound.volume = soundLevel / 100;
     }
+    sound.volume = soundLevel / 100;
   
   });
   
