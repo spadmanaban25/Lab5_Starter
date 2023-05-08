@@ -1,4 +1,6 @@
 # Lab 5 - Starter
 Name: Steve Padmanaban <br><br>
 Partner: Cody Rupp <br><br>
-[Link to Introduction to Github Actions Repository](https://github.com/spadmanaban25/introduction-to-github)
+[Link to Introduction to Github Actions Repository](https://github.com/spadmanaban25/introduction-to-github) <br><br>
+[Link to Expose Section Github Page](https://spadmanaban25.github.io/Lab5_Starter/expose.html) <br><br>
+[Link to Explore Section Github Page](https://spadmanaban25.github.io/Lab5_Starter/explore.html)
