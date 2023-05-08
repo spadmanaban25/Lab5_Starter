@@ -54,6 +54,7 @@ function init() {
       audioImg.alt = "Volume Level 3";
       audioImg.src = "assets/icons/volume-level-3.svg";
     }
+    
     audio.volume = soundVolume.value / 100;
   
   });
