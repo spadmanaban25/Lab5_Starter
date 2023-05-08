@@ -67,7 +67,7 @@ function init() {
   });
   
   soundButton.addEventListener('click', function (e) {
-    sound.play();
+    hornSound.play();
     if (selectedHorn.value === "party-horn") {
       const confetti = new JSConfetti({ canvas });
       confetti.addConfetti();
