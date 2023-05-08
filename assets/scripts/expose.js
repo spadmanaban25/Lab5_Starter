@@ -40,6 +40,7 @@ function init() {
   soundVolume.addEventListener('change', function () {
     let soundLevel = soundVolume.children[0].value;
     let audioImg = soundVolume.children[1];
+    let audio = document.querySelector('audio');
 
     if (soundLevel == 0) {
       audioImg.alt = "Volume Level 0";
@@ -54,7 +55,7 @@ function init() {
       audioImg.alt = "Volume Level 3";
       audioImg.src = "assets/icons/volume-level-3.svg";
     }
-    sound.volume = soundLevel / 100;
+    audio.volume = soundLevel / 100;
   
   });
   
